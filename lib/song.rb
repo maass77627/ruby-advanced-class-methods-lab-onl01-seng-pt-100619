@@ -63,8 +63,6 @@ def self.new_from_filename(string)
    song = Song.new 
    song.artist_name = artist_name
    song.name = name
-   artist_name.save
-   name.save
 end 
 
 def self.destroy_all
