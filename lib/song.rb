@@ -56,15 +56,15 @@ def self.alphabetical
   @@all.sort_by {|song| song.name} 
 end
 
-def self.new_from_filename(name)
-   file =  name.split(/-/)
+def self.new_from_filename(string)
+   file =  string.split(/-/)
    artist_name = file[0]
-   song_name = file[1]
+   name = file[1]
    song = Song.new 
    song.artist_name = artist_name
-   song.song_name = song_name
+   song.name = name
    artist_name.save
-   song_name.save
+   name.save
 end 
 
 def self.destroy_all
