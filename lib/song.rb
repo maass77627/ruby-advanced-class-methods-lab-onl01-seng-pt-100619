@@ -60,6 +60,8 @@ def self.new_from_filename(name)
     name.split(/-/)
 
 end 
+
+def 
   
 
     
