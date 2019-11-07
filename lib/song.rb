@@ -66,10 +66,15 @@ def self.new_from_filename(string)
    song 
 end 
 
-def self.create_from_filename
-  song = Song.new
-  song.new_from_filename
-  song.save
+def self.create_from_filename(string)
+  data =  string.split(/[-.]/)
+   artist_name = data[0].strip
+   name = data[1].strip
+   song = Song.new 
+   song.artist_name = artist_name
+   song.name = name
+   song 
+   song.save
 end 
   
 
