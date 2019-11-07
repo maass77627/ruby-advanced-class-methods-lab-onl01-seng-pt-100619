@@ -39,8 +39,7 @@ def self.find_or_create_by_name(name)
       else 
         song.create_by_name(name)
       end
-    end 
-  end 
+    end
   
     
 end
