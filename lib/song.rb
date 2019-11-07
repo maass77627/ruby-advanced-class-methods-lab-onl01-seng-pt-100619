@@ -60,6 +60,8 @@ def self.new_from_filename(name)
    file =  name.split(/-/)
    artist = file[0]
    song = file[1]
+   song = Song.new 
+   
 
 end 
 
