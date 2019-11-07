@@ -56,14 +56,16 @@ def self.alphabetical
   @@all.sort_by {|song| song.name} 
 end
 
-def self.create_from_filename(string)
-   file =  string.split(/-/)
-   artist_name = file[0]
-   name = file[1].strip
-   song = Song.new 
+def self.new_from_filename(string)
+   data =  string.split(/-/)
+   artist_name = data[0]
+   name = data[1].strip
    song.artist_name = artist_name
    song.name = name
 end 
+
+def self.create_from_file 
+  
 
 def self.destroy_all
   @@all.clear
