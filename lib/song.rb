@@ -59,7 +59,7 @@ end
 def self.create_from_filename(string)
    file =  string.split(/-/)
    artist_name = file[0]
-   name = file[1]
+   name = file[1].strip
    song = Song.new 
    song.artist_name = artist_name
    song.name = name
