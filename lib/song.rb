@@ -41,5 +41,17 @@ def self.find_or_create_by_name(name)
       end
     end
   
+  def self.find_or_create_by_name(song)
+  Song.find_by_name(song)
+  Song.create_by_name(song)
+  self
+  if song = Song.find_by_name(song)
+  return song
+else song = Song.new
+end
+  song
+
+  end
+
     
 end
