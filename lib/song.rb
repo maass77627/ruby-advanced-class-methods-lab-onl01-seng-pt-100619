@@ -66,7 +66,7 @@ def self.new_from_filename(string)
    song 
 end 
 
-def self.create_from_filename(string) 
+def self.create_from_filename
   song = Song.new
   song.new_from_filename
   song.save
