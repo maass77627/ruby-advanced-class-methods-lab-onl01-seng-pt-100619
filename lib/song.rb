@@ -50,8 +50,9 @@ def self.find_or_create_by_name(name)
 else song = Song.new
 end
   song
+end
 
-  end
+def self.alphabetical 
 
     
 end
