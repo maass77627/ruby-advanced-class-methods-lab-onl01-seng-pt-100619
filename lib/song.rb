@@ -58,7 +58,7 @@ end
 
 def self.new_from_filename(string)
    data =  string.split(/[-.]/)
-   artist_name = data[0]
+   artist_name = data[0].strip
    name = data[1].strip
    song = Song.new 
    song.artist_name = artist_name
