@@ -33,5 +33,6 @@ class Song
     if @@all.include?(name)
       puts "name"
     end 
+  end 
     
 end
