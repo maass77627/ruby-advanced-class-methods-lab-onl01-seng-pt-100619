@@ -57,6 +57,7 @@ def self.alphabetical
 end
 
 def self.new_from_filename(string)
+  new_song = []
    data =  string.split(/[-.]/)
    artist_name = data[0]
    name = data[1]
