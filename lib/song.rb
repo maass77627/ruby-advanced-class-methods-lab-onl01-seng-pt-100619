@@ -61,7 +61,7 @@ def self.new_from_filename(name)
    artist = file[0]
    song = file[1]
    song = Song.new 
-   
+   song.artist = artist 
 
 end 
 
