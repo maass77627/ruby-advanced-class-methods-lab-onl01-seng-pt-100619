@@ -57,6 +57,9 @@ def self.alphabetical
 end
 
 def self.new_from_filename("name - song.mp3")
+    name.sort(/-/)
+
+end 
   
 
     
