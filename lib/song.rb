@@ -65,7 +65,7 @@ def self.new_from_filename(string)
    song.name = name
 end 
 
-def self.create_from_file 
+def self.create_from_filename 
 end 
   
 
